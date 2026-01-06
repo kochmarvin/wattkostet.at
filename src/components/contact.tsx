@@ -1,4 +1,4 @@
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -8,33 +8,21 @@ interface Contact7Props {
   emailLabel?: string;
   emailDescription?: string;
   email?: string;
-  officeLabel?: string;
-  officeDescription?: string;
-  officeAddress?: string;
   phoneLabel?: string;
   phoneDescription?: string;
   phone?: string;
-  chatLabel?: string;
-  chatDescription?: string;
-  chatLink?: string;
   className?: string;
 }
 
 const Contact7 = ({
-  title = "Contact Us",
-  description = "Contact the support team at Shadcnblocks.",
-  emailLabel = "Email",
-  emailDescription = "We respond to all emails within 24 hours.",
-  email = "example@shadcnblocks.com",
-  officeLabel = "Office",
-  officeDescription = "Drop by our office for a chat.",
-  officeAddress = "1 Eagle St, Brisbane, QLD, 4000",
-  phoneLabel = "Phone",
-  phoneDescription = "We're available Mon-Fri, 9am-5pm.",
-  phone = "+123 456 7890",
-  chatLabel = "Live Chat",
-  chatDescription = "Get instant help from our support team.",
-  chatLink = "Start Chat",
+  title = "Kontakt",
+  description = "Nehmen Sie Kontakt mit mir auf – ich helfe Ihnen gerne dabei, bei Strom & Gas zu sparen.",
+  emailLabel = "E-Mail",
+  emailDescription = "Schreiben Sie mir eine Nachricht, ich antworte schnellstmöglich.",
+  email = "anfrage@wattkostet.at",
+  phoneLabel = "Telefon",
+  phoneDescription = "Rufen Sie mich an für eine persönliche Beratung.",
+  phone = "+43 676 912 8040",
   className,
 }: Contact7Props) => {
   return (
@@ -64,32 +52,12 @@ const Contact7 = ({
           </div>
           <div className="rounded-lg bg-muted p-6">
             <span className="mb-3 flex size-12 flex-col items-center justify-center rounded-full bg-accent">
-              <MapPin className="h-6 w-auto" />
-            </span>
-            <p className="mb-2 text-lg font-semibold">{officeLabel}</p>
-            <p className="mb-3 text-muted-foreground">{officeDescription}</p>
-            <a href="#" className="font-semibold hover:underline">
-              {officeAddress}
-            </a>
-          </div>
-          <div className="rounded-lg bg-muted p-6">
-            <span className="mb-3 flex size-12 flex-col items-center justify-center rounded-full bg-accent">
               <Phone className="h-6 w-auto" />
             </span>
             <p className="mb-2 text-lg font-semibold">{phoneLabel}</p>
             <p className="mb-3 text-muted-foreground">{phoneDescription}</p>
             <a href={`tel:${phone}`} className="font-semibold hover:underline">
               {phone}
-            </a>
-          </div>
-          <div className="rounded-lg bg-muted p-6">
-            <span className="mb-3 flex size-12 flex-col items-center justify-center rounded-full bg-accent">
-              <MessageCircle className="h-6 w-auto" />
-            </span>
-            <p className="mb-2 text-lg font-semibold">{chatLabel}</p>
-            <p className="mb-3 text-muted-foreground">{chatDescription}</p>
-            <a href="#" className="font-semibold hover:underline">
-              {chatLink}
             </a>
           </div>
         </div>

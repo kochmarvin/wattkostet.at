@@ -1,6 +1,6 @@
 const Content2 = () => {
 	return (
-		<section className="py-32 bg-[#fff8ee]">
+		<section className="pt-32">
 			<div className="container max-w-7xl">
 				<div className="relative grid-cols-3 gap-20 lg:grid">
 					<div className="lg:col-span-2">
@@ -28,10 +28,8 @@ const Content2 = () => {
 								<a href="https://policies.google.com/privacy" target="_blank">
 									Google Datenschutzrichtlinie
 								</a>
-								.
-							</p>
 
-							<p>-</p>
+							</p>
 						</section>
 					</div>
 				</div>

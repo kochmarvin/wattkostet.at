@@ -1,5 +1,5 @@
 import { Content2 } from '@/components/Content2';
-import { Footer7 } from '@/components/Footer7';
+import { Footer7 } from '@/components/footer';
 
 function Page() {
 	return (

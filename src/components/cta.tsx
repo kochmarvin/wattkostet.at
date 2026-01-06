@@ -14,18 +14,18 @@ interface Cta4Props {
 }
 
 const defaultItems = [
-  "Easy Integration",
-  "24/7 Support",
-  "Customizable Design",
-  "Scalable Performance",
-  "Hundreds of Blocks",
+  "Kostenlose & unverbindliche Beratung",
+  "Garantiert günstigster Tarif",
+  "Alles aus einer Hand",
+  "Persönliche Betreuung",
+  "Schnelle Umsetzung",
 ];
 
 const Cta4 = ({
-  title = "Call to Action",
-  description = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto illo praesentium nisi, accusantium quae.",
-  buttonText = "Get Started",
-  buttonUrl = "https://shadcnblocks.com",
+  title = "Jetzt Strom & Gas sparen",
+  description = "Lassen Sie mich Ihre aktuellen Tarife kostenlos prüfen und finden Sie garantiert einen günstigeren Anbieter. Innerhalb weniger Minuten können Sie bereits hunderte Euro pro Jahr sparen.",
+  buttonText = "Jetzt kostenlos prüfen lassen",
+  buttonUrl = "#contact",
   items = defaultItems,
   className,
 }: Cta4Props) => {
@@ -39,7 +39,7 @@ const Cta4 = ({
                 <h4 className="mb-1 text-2xl font-bold md:text-3xl">{title}</h4>
                 <p className="text-muted-foreground">{description}</p>
                 <Button className="mt-6" asChild>
-                  <a href={buttonUrl} target="_blank">
+                  <a href={buttonUrl}>
                     {buttonText} <ArrowRight className="size-4" />
                   </a>
                 </Button>
